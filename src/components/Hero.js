@@ -29,7 +29,7 @@ const Hero = () => {
               <option value="" disabled selected>
                 Select a Course
               </option>
-              <option value="webDevelopment">Web Development</option>
+              <option value="musicProduction">Music Production</option>
               <option value="graphicDesign">Graphic Design</option>
               <option value="digitalMarketing">Digital Marketing</option>
             </select>
