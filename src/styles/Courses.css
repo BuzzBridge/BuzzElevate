@@ -1,13 +1,21 @@
 .courses {
   padding: 50px 20px;
-  background-color: black; /* Black background */
-  color: white; /* White text */
+  background-image: url('/images/CoursesImage.jpg'); /* Replace with the path to your image */
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the image */
+  color: white; /* Makes the text stand out on a background image */
   text-align: center;
 }
 
 .courses h2 {
   font-size: 2.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  border-radius: 25px;
+  background-color: white; /* Semi-transparent black background for better contrast */
+  color: black;
+  width: 300px;
+  margin: 0 auto 50px;
+  padding: 10px;
 }
 
 .course-grid {

@@ -5,14 +5,16 @@ import About from "./components/About";
 import Courses from "./components/Courses";
 import 'font-awesome/css/font-awesome.min.css';
 import Footer from "./components/Footer";
+import RegistrationForm from "./components/RegistrationForm";
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Hero />
-      <About />
       <Courses />
+      <About />
+      <RegistrationForm/>
       <Footer />
     </div>
   );

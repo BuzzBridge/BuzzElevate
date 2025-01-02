@@ -1,0 +1,56 @@
+.registration-form-wrapper {
+    background-color: black; /* Complete black background */
+    background-image: url('/images/CoursesImage.jpg');
+    color: white; /* White text for contrast */
+    display: flex;
+    justify-content: center; /* Center the form horizontally */
+    align-items: center; /* Center the form vertically */
+    padding: 20px; /* Add padding for better spacing */
+  }
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto; /* Center the form */
+    padding: 50px;
+    background-color:black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .registration-form input,
+  .registration-form select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .registration-form select:focus,
+  .registration-form input:focus {
+    outline: none;
+    border-color: black;
+  }
+  
+  .submit-button {
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: grey;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #444;
+  }
+  

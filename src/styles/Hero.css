@@ -43,10 +43,10 @@
     width: 100%;
     max-width: 400px; /* Restricts the width of the content */
     padding: 20px;
-    background: rgba(0, 0, 0, 0.7); /* Adds contrast to improve readability */
+    background: rgba(0, 0, 0, 0.3); /* Low opacity for partial transparency */
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
-  }
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional: subtle shadow for text contrast */
+}
   
   .registration-form {
     display: flex;

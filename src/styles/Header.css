@@ -1,20 +1,21 @@
 /* Header Styles */
 .header {
   display: flex;
+  height: 100px;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
   background-color: white; /* White background for the header */
   color: black; /* Black text for the logo */
-  border: 5px solid black;
+  border: 1px solid black;
   width: 100%; /* Ensure the header spans the entire width */
   box-sizing: border-box; /* Ensure padding does not affect width */
 }
 
 /* Logo Image Styles */
 .header .logo {
-  height: auto; /* Keep the height auto */
-  width: 100%; /* Make the logo span the entire width of the header */
+  height: 250px; /* Keep the height auto */
+  width: 50%; /* Make the logo span the entire width of the header */
   object-fit: contain; /* Maintain aspect ratio while scaling */
   max-width: 300px; /* Optionally add a maximum width to avoid it getting too large */
   display: block; /* Remove any extra space below the image */
@@ -29,19 +30,19 @@
 
 .nav-links button {
   background: none;
-  border: none;
+  border: 1px solid black; /* Defines a black border */
   color: black;
   font-size: 1rem;
   cursor: pointer;
   padding: 10px 15px;
-  border-radius: 20px;
-  background-color: black;
-  color: white;
+  border-radius: 20px; /* Adds curved corners */
+  background-color: white;
   transition: background-color 0.3s, color 0.3s;
 }
 
+
 .nav-links button:hover {
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   border: 2px solid black; /* Optional: adds a border on hover */
 }
