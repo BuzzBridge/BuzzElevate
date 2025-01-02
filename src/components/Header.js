@@ -11,7 +11,12 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="logo">Elevate Academy</div>
+      {/* Use the correct image path */}
+      <img 
+        src="/images/ss.png" 
+        alt="Elevate Academy Logo" 
+        className="logo" 
+      />
       <nav>
         <ul className="nav-links">
           <li><button onClick={() => scrollToSection("home")}>Home</button></li>
