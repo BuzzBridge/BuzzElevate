@@ -1,0 +1,36 @@
+.courses {
+    padding: 50px 20px;
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    text-align: center;
+  }
+  
+  .courses h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .course-card {
+    padding: 20px;
+    background-color: white; /* White card */
+    color: black; /* Black text */
+    border: 1px solid black;
+    border-radius: 8px;
+  }
+  
+  .course-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .course-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  

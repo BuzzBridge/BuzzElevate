@@ -1,0 +1,22 @@
+.footer {
+    padding: 20px;
+    background-color: white; /* White background */
+    color: black; /* Black text */
+    text-align: center;
+    border-top: 2px solid black;
+  }
+  
+  .social-links {
+    margin-top: 10px;
+  }
+  
+  .social-links a {
+    color: black;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .social-links a:hover {
+    text-decoration: underline;
+  }
+  
