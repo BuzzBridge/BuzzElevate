@@ -7,7 +7,6 @@
   padding: 10px;
   background-color: white; /* White background for the header */
   color: black; /* Black text for the logo */
-  border: 1px solid black;
   width: 100%; /* Ensure the header spans the entire width */
   box-sizing: border-box; /* Ensure padding does not affect width */
 }

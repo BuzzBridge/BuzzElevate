@@ -4,6 +4,9 @@ import "../styles/RegistrationForm.css";
 const RegistrationForm = () => {
   return (
     <div className="registration-form-wrapper">
+      <div className="registration-heading">
+        <h2>Begin Your Elevation</h2>
+      </div>
       <form className="registration-form">
         <input type="text" placeholder="Full Name" required />
         <input type="email" placeholder="Email Address" required />

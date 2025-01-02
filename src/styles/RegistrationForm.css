@@ -6,51 +6,69 @@
     justify-content: center; /* Center the form horizontally */
     align-items: center; /* Center the form vertically */
     padding: 20px; /* Add padding for better spacing */
+    flex-direction: column; /* Stack the form and heading vertically */
   }
-
-.registration-form {
+  
+  .registration-heading {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    border-radius: 25px;
+    background-color: white; /* Semi-transparent black background for better contrast */
+    width: 300px;
+    margin: 0 auto 50px;
+    padding: 10px; /* Space between the heading and the form */
+  }
+  
+  
+  .registration-heading h2 {
+    font-size: 2rem; /* Set a suitable font size */
+    text-align: center; /* Center the heading */
+    color: black; /* White color for the heading */
+  }
+  
+  .registration-form {
     display: flex;
     flex-direction: column;
     gap: 15px;
     width: 100%;
     max-width: 400px;
-    margin: 0 auto; /* Center the form */
     padding: 50px;
-    background-color:black;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    background-color: #1a1a1a; /* Slightly lighter black for the form background */
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Subtle shadow for depth */
   }
   
   .registration-form input,
   .registration-form select {
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #333; /* Slightly lighter black for input borders */
     border-radius: 5px;
     width: 100%;
     box-sizing: border-box;
+    background-color: #2a2a2a; /* Dark gray input background */
+    color: white;
   }
   
   .registration-form select:focus,
   .registration-form input:focus {
     outline: none;
-    border-color: black;
+    border-color: white; /* White border on focus for contrast */
   }
   
   .submit-button {
     padding: 10px;
     font-size: 16px;
-    color: white;
-    background-color: grey;
+    color: black;
+    background-color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
   
   .submit-button:hover {
     background-color: #444;
+    color: white;
   }
   

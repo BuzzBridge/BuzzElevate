@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -8,13 +8,19 @@ import Footer from "./components/Footer";
 import RegistrationForm from "./components/RegistrationForm";
 
 function App() {
+  // Create a ref for the RegistrationForm section
+  const registrationRef = useRef(null);
+
   return (
     <div className="App">
       <Header />
-      <Hero />
+      <Hero registrationRef={registrationRef} />
       <Courses />
       <About />
-      <RegistrationForm/>
+      {/* Pass the ref to the RegistrationForm */}
+      <div ref={registrationRef}>
+        <RegistrationForm />
+      </div>
       <Footer />
     </div>
   );
