@@ -15,15 +15,16 @@ const Hero = ({ registrationRef }) => {
         Your browser does not support the video tag.
       </video>
       <div className="hero-content">
-        <h1>Elevate</h1>
-        <p>your creative</p>
-        <h1>career</h1>
-        <p>with us!</p>
-        {/* Button to scroll to the registration form */}
+        {/* Replace text with an image */}
+        <img 
+          src="/images/ElevateHero.png" 
+          alt="Elevate your creative career with us" 
+          className="hero-image" 
+        />
       </div>
       <button onClick={scrollToRegistration} className="cta-button">
-      Enroll Now!
-        </button>
+       <b> Enroll Now! </b>
+      </button>
     </section>
   );
 };

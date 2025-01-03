@@ -1,5 +1,5 @@
 import React from "react";
-import { FaInstagram } from "react-icons/fa"; // Import Instagram icon
+import { FaFacebook, FaInstagram, FaPinterest, FaYoutube } from "react-icons/fa"; // Import Instagram icon
 import "../styles/Footer.css";
 
 const Footer = () => {
@@ -12,6 +12,8 @@ const Footer = () => {
       <div className="social-links">
         <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
           <FaInstagram size={40} /> {/* Increased icon size */}
+          <FaYoutube size={40} /> {/* Increased icon size */}
+          <FaFacebook size={40} /> {/* Increased icon size */}
         </a>
       </div>
     </footer>
