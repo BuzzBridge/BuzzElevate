@@ -1,14 +1,19 @@
-// src/components/CourseModal/MusicProductionModal.js
 import React from "react";
-import ModalContent from "./ModalContent";  // Common content component
+import "/Users/asees/Documents/Elevate/my-app/src/styles/Modal.css";
 
-const MusicProductionModal = ({ course, onClose }) => {
+const MusicProductionModal = ({ showModal, course, onClose }) => {
+  if (!showModal) return null;
+
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <h3>{course.title}</h3>
-        <ModalContent course={course} />
-        <button onClick={onClose} className="close-button">Close</button>
+        <p>{course.description}</p>
+        {/* Render the course image */}
+        <img src={course.image} alt={course.title} className="course-image" />
+        <button onClick={onClose} className="close-button">
+          Close
+        </button>
       </div>
     </div>
   );

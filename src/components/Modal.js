@@ -9,6 +9,8 @@ const Modal = ({ showModal, course, onClose }) => {
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <h3>{course.title}</h3>
         <p>{course.description}</p>
+        {/* Display the unique course image */}
+        <img src={course.image} alt={course.title} className="course-image" />
         <button onClick={onClose} className="close-button">
           Close
         </button>

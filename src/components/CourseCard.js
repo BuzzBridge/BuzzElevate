@@ -17,7 +17,7 @@ const CourseCard = ({ course, openModal }) => {
         </div>
       </div>
       <button
-        onClick={() => openModal(course)}
+        onClick={() => openModal(course)} // Pass the course object to openModal
         className="explore-button"
         style={{ backgroundColor: course.buttonColor }}
       >

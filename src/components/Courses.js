@@ -1,4 +1,3 @@
-// src/components/Courses.js
 import React, { useState } from "react";
 import { courses } from "../data/Courses"; // Import course data
 import MusicProductionModal from "./CourseModal/MusicProductionModal"; // Import modals
