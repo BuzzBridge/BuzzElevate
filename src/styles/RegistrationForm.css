@@ -11,12 +11,14 @@
   
   .registration-heading {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
-    border-radius: 25px;
-    background-color: white; /* Semi-transparent black background for better contrast */
-    width: 300px;
-    margin: 0 auto 50px;
-    padding: 10px; /* Space between the heading and the form */
+  margin-bottom: 1rem;
+  border-radius: 25px;
+  background-color: white; /* Semi-transparent black background for better contrast */
+  color: black;
+  width: 300px;
+  margin: 0 auto 50px;
+  padding: 10px;
+    white-space: nowrap; /* Prevent line breaks */
   }
   
   

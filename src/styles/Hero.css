@@ -22,8 +22,8 @@
 
 .hero-content h1,
 .hero-content p {
-  font-size: 4rem; /* Same font size for both */
-  margin: 0;
+  font-size: 4rem;
+  margin: 0; /* Remove all default margin */
   font-weight: bold;
   letter-spacing: 2px;
   display: inline-block; /* Ensures that both elements align horizontally */
@@ -32,7 +32,8 @@
 .hero-content p {
   font-weight: lighter;
   line-height: 1.6;
-  margin-left: 0; /* Remove default margin to align with the heading */
+  margin-left: 0;
+  margin-top: 0; /* Remove any top margin */
 }
 
 .cta-button {
@@ -45,7 +46,7 @@
   cursor: pointer;
   transition: all 0.3s ease; /* Adds a smooth hover effect */
   margin-top: 30px; /* Adds space between the content and the button */
-  margin-left: 100px;
+  margin-left: 150px;
   width: 200px; /* Set a specific width for the button */
 }
 
@@ -65,7 +66,7 @@
   background: rgba(0, 0, 0, 0.3); /* Low opacity for partial transparency */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  margin-left: 25px; /* Optional: subtle shadow for text contrast */
+  margin-left: 50px; /* Optional: subtle shadow for text contrast */
 }
 
 .registration-form {

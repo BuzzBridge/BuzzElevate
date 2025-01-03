@@ -6,9 +6,8 @@ const Footer = () => {
     <footer className="footer">
       <p>© 2025 Elevate Academy. All rights reserved.</p>
       <div className="social-links">
-        <a href="#">Facebook</a>
-        <a href="#">Twitter</a>
         <a href="#">Instagram</a>
+        <p className="managed-by">Managed By Buzz Bridge Inc.</p>
       </div>
     </footer>
   );

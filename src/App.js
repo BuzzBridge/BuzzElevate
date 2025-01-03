@@ -6,6 +6,7 @@ import Courses from "./components/Courses";
 import 'font-awesome/css/font-awesome.min.css';
 import Footer from "./components/Footer";
 import RegistrationForm from "./components/RegistrationForm";
+import Contact from "./components/Contact";
 
 function App() {
   // Create a ref for the RegistrationForm section
@@ -21,6 +22,7 @@ function App() {
       <div ref={registrationRef}>
         <RegistrationForm />
       </div>
+      <Contact/>
       <Footer />
     </div>
   );

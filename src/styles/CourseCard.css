@@ -1,61 +1,67 @@
-/* .course-card will contain the background image with the blur effect */
+.course-card-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the card and button horizontally */
+  margin-bottom: 30px; /* Add spacing between cards */
+}
+
 .course-card {
-    position: relative;
-    width: 90%; /* Ensure the card takes up full width within the grid */
-    height: 250px; /* Adjust the height of the card */
-    background-size: cover;
-    background-position: center;
-    transition: filter 0.3s ease-in-out; /* Optional: smooth transition for the blur effect */
-    border-radius: 10px; /* Optional: rounded corners */
-    overflow: hidden; /* Hide anything outside of the card bounds */
-  }
-  
-  /* Create a wrapper for the content on top of the blurred image */
-  .course-content {
-    position: absolute; /* Position content over the background image */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end; /* Align text to the bottom */
-    align-items: center;
-    color: white; /* White text on top of the image */
-    padding: 20px;
-    z-index: 1; /* Make sure the text appears on top */
-  }
-  
-  /* Position the arrow button outside the content section, at the bottom center of the card */
-  .arrow-button {
-    background-color: white; /* Default background */
-    border: 2px solid black; /* Border color */
-    border-radius: 50%; /* Circular button */
-    width: 40px; /* Adjust width of circle */
-    height: 40px; /* Adjust height of circle */
-    display: flex;
-    align-items: center; /* Center the arrow vertically */
-    justify-content: center; /* Center the arrow horizontally */
-    font-size: 20px; /* Font size for the arrow */
-    color: black; /* Default arrow color */
-    cursor: pointer;
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
-    position: absolute; /* Absolutely position the arrow */
-    bottom: 20px; /* Position it 20px from the bottom of the card */
-    left: 50%; /* Center it horizontally */
-    transform: translateX(-50%); /* Adjust for exact centering */
-  }
-  
-  .arrow-button i {
-    font-size: 20px; /* Adjust arrow size */
-  }
-  
-  .arrow-button:hover {
-    background-color: black; /* Change background to black on hover */
-    border: 2px solid white; /* Change border to white on hover */
-  }
-  
-  .arrow-button:hover i {
-    color: white; /* Change arrow color to white on hover */
-  }
-  
+  position: relative;
+  width: 90%;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease, filter 0.3s ease-in-out; /* Add transition for smooth scaling */
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.course-card:hover {
+  transform: scale(1.05); /* Scale up the card slightly */
+}
+
+.course-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  z-index: 1;
+}
+
+.arrow-button {
+  margin-top: 20px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.arrow-button i {
+  font-size: 20px;
+}
+
+.arrow-button:hover {
+  background-color: black;
+  border: 2px solid white;
+}
+
+.arrow-button:hover i {
+  color: white;
+}

@@ -1,26 +1,20 @@
 export const courses = [
   {
     id: 1,
-    title: "Music Production",
-    description:
-      "Dive into the world of sound with our comprehensive Music Production course.",
-    backgroundImage: "/images/musicProduction.jpg",
+    backgroundImage: "/images/MuiscProdCourse.png",
     modalComponent: "MusicProductionModal", // Define which modal component to load
+    buttonColor: "#B14298", // Example color
   },
   {
     id: 2,
-    title: "Graphic Designing",
-    description:
-      "Transform ideas into stunning visuals with our Graphic Designing course.",
-    backgroundImage: "/images/graphicDesigning.jpg",
+    backgroundImage: "/images/GraphicDesigningCourse.png",
     modalComponent: "GraphicDesignModal", // Define which modal component to load
+    buttonColor: "#7FC348", // Example color
   },
   {
     id: 3,
-    title: "Digital Marketing",
-    description:
-      "Step into the fast-paced world of digital marketing with our expert-led course.",
-    backgroundImage: "/images/digitalMarketing.jpg",
+    backgroundImage: "/images/VideoEditingCourse.png",
     modalComponent: "DigitalMarketingModal", // Define which modal component to load (if applicable)
+    buttonColor: "#F15A22", // Example color
   },
 ];

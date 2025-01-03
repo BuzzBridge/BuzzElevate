@@ -19,4 +19,12 @@
   .social-links a:hover {
     text-decoration: underline;
   }
+
+
+.managed-by {
+  margin-top: 5px; /* Adds space between the Instagram link and the new text */
+  font-size: 1rem; /* Set appropriate font size */
+  color: #aaa; /* Slightly lighter color for the business text */
+  margin-top: 10px; /* Space above the business text */
+}
   
