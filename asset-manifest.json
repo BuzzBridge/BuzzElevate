@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/BuzzBridge/BuzzElevate/static/css/main.68cc99f6.chunk.css",
+    "main.js": "/BuzzBridge/BuzzElevate/static/js/main.c94c4156.chunk.js",
+    "main.js.map": "/BuzzBridge/BuzzElevate/static/js/main.c94c4156.chunk.js.map",
+    "runtime-main.js": "/BuzzBridge/BuzzElevate/static/js/runtime-main.ff5b8c1d.js",
+    "runtime-main.js.map": "/BuzzBridge/BuzzElevate/static/js/runtime-main.ff5b8c1d.js.map",
+    "static/css/2.009b84cf.chunk.css": "/BuzzBridge/BuzzElevate/static/css/2.009b84cf.chunk.css",
+    "static/js/2.87434b09.chunk.js": "/BuzzBridge/BuzzElevate/static/js/2.87434b09.chunk.js",
+    "static/js/2.87434b09.chunk.js.map": "/BuzzBridge/BuzzElevate/static/js/2.87434b09.chunk.js.map",
+    "static/js/3.573f3798.chunk.js": "/BuzzBridge/BuzzElevate/static/js/3.573f3798.chunk.js",
+    "static/js/3.573f3798.chunk.js.map": "/BuzzBridge/BuzzElevate/static/js/3.573f3798.chunk.js.map",
+    "index.html": "/BuzzBridge/BuzzElevate/index.html",
+    "precache-manifest.a571769ad266fd02f53cc09f3f70c0a5.js": "/BuzzBridge/BuzzElevate/precache-manifest.a571769ad266fd02f53cc09f3f70c0a5.js",
+    "service-worker.js": "/BuzzBridge/BuzzElevate/service-worker.js",
+    "static/css/2.009b84cf.chunk.css.map": "/BuzzBridge/BuzzElevate/static/css/2.009b84cf.chunk.css.map",
+    "static/css/main.68cc99f6.chunk.css.map": "/BuzzBridge/BuzzElevate/static/css/main.68cc99f6.chunk.css.map",
+    "static/js/2.87434b09.chunk.js.LICENSE.txt": "/BuzzBridge/BuzzElevate/static/js/2.87434b09.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "/BuzzBridge/BuzzElevate/static/media/fontawesome-webfont.fee66e71.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ff5b8c1d.js",
+    "static/css/2.009b84cf.chunk.css",
+    "static/js/2.87434b09.chunk.js",
+    "static/css/main.68cc99f6.chunk.css",
+    "static/js/main.c94c4156.chunk.js"
+  ]
+}
