@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { courses } from "../data/Courses"; // Import course data
+import { courses } from "../resources/data/courseData"; // Import course data
 import MusicProductionModal from "./CourseModal/MusicProductionModal"; // Import modals
 import GraphicDesignModal from "./CourseModal/GraphicDesignModal";  // Import modals
 import DigitalMarketingModal from "./CourseModal/DigitalMarketingModal";  // Import Digital Marketing Modal
