@@ -1,6 +1,6 @@
 .registration-form-wrapper {
     background-color: black; /* Complete black background */
-    background-image: url('/images/CoursesImage.jpg');
+    background-image: url('../../public/images/CoursesImage.jpg'); /* Replace with the path to your image */
     color: white; /* White text for contrast */
     display: flex;
     justify-content: center; /* Center the form horizontally */
