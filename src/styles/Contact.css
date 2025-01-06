@@ -1,7 +1,7 @@
 .contact-section {
     padding: 40px 20px;
     background-color: black;
-    background-image: url('../../public/images/AboutUsImage.jpg');
+    background-image: url('../resources/images/AboutUsImage.jpg');
     color: white
   }
   
