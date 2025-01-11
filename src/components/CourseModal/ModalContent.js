@@ -1,6 +1,11 @@
 // src/components/CourseModal/ModalContent.js
 import React from "react";
 
+/**
+ * Not used anywhere. Could be used to improve Course Description Modal
+ * @param {*} param0 
+ * @returns 
+ */
 const ModalContent = ({ course }) => {
   return (
     <>

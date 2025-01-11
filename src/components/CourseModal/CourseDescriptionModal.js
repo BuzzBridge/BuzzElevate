@@ -1,7 +1,7 @@
 import React from "react";
 import "../../styles/Modal.css";
 
-const DigitalMarketingModal = ({ showModal, course, onClose }) => {
+const CourseDescriptionModal = ({ showModal, course, onClose }) => {
   if (!showModal) return null;
 
   return (
@@ -19,4 +19,4 @@ const DigitalMarketingModal = ({ showModal, course, onClose }) => {
   );
 };
 
-export default DigitalMarketingModal;
+export default CourseDescriptionModal;

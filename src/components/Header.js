@@ -13,7 +13,7 @@ const Header = () => {
     <header className="header">
       {/* Use the correct image path */}
       <img 
-        src="/images/ElevatelogoWhiteFinal.png" 
+        src="/assets/images/ElevatelogoWhiteFinal.png" 
         alt="Elevate Academy Logo" 
         className="logo" 
       />
