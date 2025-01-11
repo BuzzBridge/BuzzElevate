@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/About.css";
 
 const About = () => {
+  // TODO: Move context to json
   return (
     <section className="about" id="about">
       <h2>About Us</h2>
