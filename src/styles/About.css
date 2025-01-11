@@ -1,6 +1,6 @@
 .about {
   padding: 50px 20px;
-  background-image: url('../resources/images/AboutUsImage.jpg'); /* Replace with the path to your image */
+  background-image: url('/public/assets/images/AboutUsImage.jpg'); /* Replace with the path to your image */
   background-size: cover; /* Ensures the image covers the entire section */
   background-position: center; /* Centers the image */
   color: white; /* Makes the text stand out on a background image */

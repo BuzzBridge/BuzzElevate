@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import { courses } from "../resources/data/courseData"; // Import course data
-import MusicProductionModal from "./CourseModal/MusicProductionModal"; // Import modals
-import GraphicDesignModal from "./CourseModal/GraphicDesignModal";  // Import modals
-import DigitalMarketingModal from "./CourseModal/DigitalMarketingModal";  // Import Digital Marketing Modal
+import { courses } from "../data/courseData"; // Import course data
+import CourseDescriptionModal from "./CourseModal/CourseDescriptionModal";
 import CourseCard from "./CourseCard";  // Course Card component
 
 import "../styles/Courses.css"; // Import courses CSS
@@ -23,23 +21,13 @@ const Courses = () => {
 
   const renderModal = () => {
     if (selectedCourse) {
-      const ModalComponent = selectedCourse.id === 1
-        ? MusicProductionModal
-        : selectedCourse.id === 2
-        ? GraphicDesignModal
-        : selectedCourse.id === 3
-        ? DigitalMarketingModal  // Add the condition for Digital Marketing modal
-        : null;
-
-      if (ModalComponent) {
         return (
-          <ModalComponent
+          <CourseDescriptionModal
             course={selectedCourse}
             showModal={showModal} // Make sure showModal is passed
             onClose={closeModal} // Ensure onClose handler is passed
           />
         );
-      }
     }
     return null; // Ensure there's no modal rendered if no course is selected
   };
