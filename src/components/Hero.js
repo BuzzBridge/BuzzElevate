@@ -11,13 +11,13 @@ const Hero = ({ registrationRef }) => {
   return (
     <section className="hero">
       <video className="hero-video" autoPlay loop muted>
-        <source src="/videos/elevateHeroFinal.mp4" type="video/mp4" />
+        <source src="/assets/videos/elevateHeroFinal.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className="hero-content">
         {/* Replace text with an image */}
         <img 
-          src="/images/ElevateHero.png" 
+          src="/assets/images/ElevateHero.png" 
           alt="Elevate your creative career with us" 
           className="hero-image" 
         />
