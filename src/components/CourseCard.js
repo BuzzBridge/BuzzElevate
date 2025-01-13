@@ -2,13 +2,15 @@ import React from "react";
 import "../styles/CourseCard.css";
 
 const CourseCard = ({ course, openModal }) => {
+  const backgroundImage = require(`../assets/courseImages/${course.backgroundImage}`);
+
   return (
     <div className="course-card-wrapper">
       <div
         className="course-card"
         key={course.id}
         style={{
-          backgroundImage: `url(${course.backgroundImage})`,
+          backgroundImage: `url(${backgroundImage})`,
         }}
       >
         <div className="course-content">

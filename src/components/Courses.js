@@ -33,6 +33,7 @@ const Courses = () => {
   };
 
   return (
+    // TODO: WRONG CODE. if more courses come in, all will try to fit within the same space.
     <section className="courses" id="courses">
       <h2>Our Courses</h2>
       <div className="course-grid">
