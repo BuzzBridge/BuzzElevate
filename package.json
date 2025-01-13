@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://BuzzBridge.github.io/BuzzElevate",
   "dependencies": {
     "@babel/plugin-transform-runtime": "^7.25.9",
     "@babel/runtime": "^7.26.0",
