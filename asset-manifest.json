@@ -1,28 +1,20 @@
 {
   "files": {
-    "main.css": "/BuzzElevate/static/css/main.68cc99f6.chunk.css",
-    "main.js": "/BuzzElevate/static/js/main.c94c4156.chunk.js",
-    "main.js.map": "/BuzzElevate/static/js/main.c94c4156.chunk.js.map",
-    "runtime-main.js": "/BuzzElevate/static/js/runtime-main.7a24dd0c.js",
-    "runtime-main.js.map": "/BuzzElevate/static/js/runtime-main.7a24dd0c.js.map",
-    "static/css/2.512ef341.chunk.css": "/BuzzElevate/static/css/2.512ef341.chunk.css",
-    "static/js/2.87434b09.chunk.js": "/BuzzElevate/static/js/2.87434b09.chunk.js",
-    "static/js/2.87434b09.chunk.js.map": "/BuzzElevate/static/js/2.87434b09.chunk.js.map",
-    "static/js/3.573f3798.chunk.js": "/BuzzElevate/static/js/3.573f3798.chunk.js",
-    "static/js/3.573f3798.chunk.js.map": "/BuzzElevate/static/js/3.573f3798.chunk.js.map",
-    "index.html": "/BuzzElevate/index.html",
-    "precache-manifest.8cfbe3b0f668c3a89d9c5cd07f46359b.js": "/BuzzElevate/precache-manifest.8cfbe3b0f668c3a89d9c5cd07f46359b.js",
-    "service-worker.js": "/BuzzElevate/service-worker.js",
-    "static/css/2.512ef341.chunk.css.map": "/BuzzElevate/static/css/2.512ef341.chunk.css.map",
-    "static/css/main.68cc99f6.chunk.css.map": "/BuzzElevate/static/css/main.68cc99f6.chunk.css.map",
-    "static/js/2.87434b09.chunk.js.LICENSE.txt": "/BuzzElevate/static/js/2.87434b09.chunk.js.LICENSE.txt",
-    "static/media/font-awesome.min.css": "/BuzzElevate/static/media/fontawesome-webfont.fee66e71.woff"
+    "main.css": "/static/css/main.23810cfd.css",
+    "main.js": "/static/js/main.b1608d57.js",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/CoursesImage.jpg": "/static/media/CoursesImage.73126bf6f381619d35bd.jpg",
+    "static/media/AboutUsImage.jpg": "/static/media/AboutUsImage.10cba0331e1a1ab2cd75.jpg",
+    "index.html": "/index.html",
+    "main.23810cfd.css.map": "/static/css/main.23810cfd.css.map",
+    "main.b1608d57.js.map": "/static/js/main.b1608d57.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.7a24dd0c.js",
-    "static/css/2.512ef341.chunk.css",
-    "static/js/2.87434b09.chunk.js",
-    "static/css/main.68cc99f6.chunk.css",
-    "static/js/main.c94c4156.chunk.js"
+    "static/css/main.23810cfd.css",
+    "static/js/main.b1608d57.js"
   ]
 }
