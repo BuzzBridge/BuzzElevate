@@ -2,8 +2,15 @@ import React from "react";
 import "../styles/Contact.css";
 
 const Contact = () => {
+  const contactUsBackground = require(`../assets/images/backgroundImage1.jpg`);
   return (
-    <section className="contact-section" id="contact-section">
+    <section
+      className="contact-section"
+      id="contact-section"
+      style={{
+        backgroundImage: `url(${contactUsBackground})`
+      }}
+    >
       <h2 className="contact-title">Let’s Connect</h2>
       <div className="contact-wrapper">
         <div className="contact-info">

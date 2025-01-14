@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../styles/RegistrationForm.css";
 
 const RegistrationForm = () => {
+  const backgroundImage = require(`../assets/images/backgroundImage2.jpg`);
   const [popupVisible, setPopupVisible] = useState(false);
   const [formData, setFormData] = useState({
     fullName: "",
@@ -37,7 +38,12 @@ const RegistrationForm = () => {
   };
 
   return (
-    <div className="registration-form-wrapper">
+    <section 
+      className="registration-form-wrapper"
+      style={{
+        backgroundImage: `url(${backgroundImage})`
+      }}
+    >
       <div className="registration-heading">
         <h2>Begin Your Elevation</h2>
       </div>
@@ -91,7 +97,7 @@ const RegistrationForm = () => {
           <p>We'll be in contact with you soon!</p>
         </div>
       )}
-    </div>
+    </section>
   );
 };
 

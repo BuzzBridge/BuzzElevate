@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/About.css";
 
 const About = () => {
-  const aboutImage = require(`../assets/images/aboutUsBackground.jpg`)
+  const aboutImage = require(`../assets/images/backgroundImage1.jpg`)
   // TODO: Move context to json
   return (
     <section
