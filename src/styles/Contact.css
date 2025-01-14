@@ -1,7 +1,8 @@
 .contact-section {
   padding: 40px 20px;
   background-color: black;
-  color: white
+  color: white;
+  width: 100%;
 }
 
 .contact-title {

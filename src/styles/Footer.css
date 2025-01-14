@@ -4,6 +4,7 @@
   color: black;
   border-top: 2px solid black;
   display: flex;
+  width: 100%;
   flex-wrap: wrap; /* Allow items to wrap on smaller screens */
   justify-content: center; /* Center items horizontally */
   align-items: center; /* Align items vertically */

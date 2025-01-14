@@ -1,9 +1,20 @@
-/* General styling */
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  font-family: Arial, sans-serif;
+}
+
 .App {
   text-align: center;
   padding: 0;
   margin: 0;
-  font-family: Arial, sans-serif;
 }
 
 .App-logo {
@@ -41,7 +52,32 @@
   }
 }
 
-/* Media Query for Tablets and Smaller Screens (Mobile-first approach) */
+/* Section Styling */
+section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.hero-section, .courses-section, .about-section, .contact-section {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 10px; /* Adjust padding for sections */
+}
+
+/* Registration Form */
+.registration-form {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Responsive Design */
+
+/* Tablet View */
 @media (max-width: 768px) {
   .App-header {
     padding: 20px;
@@ -55,31 +91,25 @@
     font-size: 1.5rem; /* Adjust font size */
   }
 
-  /* Make content more compact */
-  .App .container {
-    padding: 20px;
-    width: 100%;
-  }
-
-  /* Make components responsive */
+  /* Compact content for smaller screens */
   .hero-section, .courses-section, .about-section, .contact-section {
     width: 100%;
     padding: 10px;
   }
 
   .registration-form {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
 
-  /* Adjust padding and margins */
+  /* General Section Adjustment */
   .section {
     padding: 20px 10px;
     margin-bottom: 20px;
   }
 }
 
-/* Media Query for smaller mobile screens */
+/* Mobile View */
 @media (max-width: 480px) {
   .App-header {
     padding: 10px;
@@ -93,7 +123,12 @@
     font-size: 1.2rem; /* Adjust font size */
   }
 
-  /* Adjust fonts and spacing for better readability */
+  /* Stack layout for smaller screens */
+  .App .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .hero-title {
     font-size: 1.8rem;
   }
@@ -106,12 +141,7 @@
     font-size: 0.9rem;
   }
 
-  /* Stack the layout for smaller screens */
-  .App .container {
-    flex-direction: column;
-    align-items: center;
-  }
-
+  /* Adjust courses layout */
   .courses .course-item {
     width: 100%;
     margin-bottom: 10px;
@@ -120,5 +150,9 @@
   .registration-form {
     width: 100%;
     margin-top: 10px;
+  }
+
+  .hero-section, .courses-section {
+    padding: 5px;
   }
 }

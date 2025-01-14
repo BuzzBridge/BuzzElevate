@@ -2,6 +2,7 @@
 .hero {
   position: relative;
   height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,7 +59,7 @@
 /* Responsive Design */
 
 /* Tablet View */
-@media (max-width: 1024px) {
+@media (max-width: 100%) {
   .hero {
     padding: 10px; /* Adjust padding for smaller screens */
     height: auto; /* Allow content to adjust naturally */
@@ -71,7 +72,7 @@
 }
 
 /* Mobile View */
-@media (max-width: 768px) {
+@media (max-width: 100%) {
   .hero {
     padding: 10px; /* Reduce padding */
   }
