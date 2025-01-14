@@ -10,10 +10,8 @@ const Footer = () => {
         <p className="managed-by">Powered By Buzz Bridge Inc.</p>
       </div>
       <div className="social-links">
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/elevatecreativeacademy?igsh=dzU1bW5obnF6emg2" target="_blank" rel="noopener noreferrer">
           <FaInstagram size={40} /> {/* Increased icon size */}
-          <FaYoutube size={40} /> {/* Increased icon size */}
-          <FaFacebook size={40} /> {/* Increased icon size */}
         </a>
       </div>
     </footer>

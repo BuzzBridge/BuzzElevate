@@ -88,7 +88,7 @@ const RegistrationForm = () => {
       {popupVisible && (
         <div className="popup">
           <p>Response Submitted</p>
-          <button onClick={() => setPopupVisible(false)}>Close</button>
+          <p>We'll be in contact with you soon!</p>
         </div>
       )}
     </div>
