@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/Header.css";
 
 const Header = () => {
+  const elevateLogo = require(`../assets/images/elevateLogo.png`)
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
@@ -13,7 +14,7 @@ const Header = () => {
     <header className="header">
       {/* Use the correct image path */}
       <img 
-        src="/assets/images/ElevatelogoWhiteFinal.png" 
+        src={elevateLogo}
         alt="Elevate Academy Logo" 
         className="logo" 
       />
