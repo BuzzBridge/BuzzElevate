@@ -1,33 +1,90 @@
 .footer {
   padding: 20px;
-  background-color: white; /* White background */
-  color: black; /* Black text */
+  background-color: white;
+  color: black;
   border-top: 2px solid black;
-  display: flex; /* Use Flexbox for layout */
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
   justify-content: center; /* Center items horizontally */
   align-items: center; /* Align items vertically */
-  position: relative; /* Position for absolute children */
+  position: relative;
+  text-align: center; /* Center-align text for smaller screens */
 }
 
 .footer p {
-  margin: 0;
+  margin: 5px 0; /* Add vertical spacing between text elements */
   text-align: center;
+  width: 100%; /* Ensure text spans the full width for centering */
 }
 
 .social-links {
-  position: absolute; /* Position links on the right */
-  right: 20px; /* Distance from the right edge */
+  position: absolute;
+  right: 20px;
+  top: 50%; /* Vertically center icons */
+  transform: translateY(-50%); /* Adjust position */
 }
 
 .social-links a {
-  display: inline-block; /* Ensure the link behaves as a block */
+  display: inline-block;
   color: black;
   text-decoration: none;
+  margin-left: 10px; /* Add spacing between icons */
+  transition: color 0.3s ease; /* Smooth hover effect */
 }
 
+.social-links a:hover {
+  color: #555; /* Darker color on hover */
+}
 
 .managed-by {
-  margin-top: 5px; /* Adds space between the Instagram link and the new text */
-  font-size: 1rem; /* Set appropriate font size */
-  color: #aaa; /* Slightly lighter color for the business text */
+  margin-top: 5px;
+  font-size: 1rem;
+  color: #aaa;
+}
+
+/* Responsive Design */
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  .social-links {
+    position: static; /* Reset position for inline display */
+    margin-top: 10px; /* Add spacing from text */
+  }
+
+  .social-links a {
+    margin: 0 10px; /* Equal spacing on both sides */
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column; /* Stack content vertically */
+    text-align: center; /* Center-align all content */
+  }
+
+  .social-links {
+    margin-top: 25px; /* Add spacing from text */
+    display: flex; /* Align icons horizontally */
+    justify-content: center; /* Center-align icons */
+  }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+  .footer {
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .social-links a {
+    margin: 0 8px; /* Reduce spacing between icons */
+  }
+
+  .footer p {
+    font-size: 0.9rem; /* Reduce font size for text */
+  }
+
+  .managed-by {
+    font-size: 0.8rem; /* Adjust font size for business text */
+  }
 }
