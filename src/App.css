@@ -1,5 +1,9 @@
+/* General styling */
 .App {
   text-align: center;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 .App-logo {
@@ -34,5 +38,87 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Media Query for Tablets and Smaller Screens (Mobile-first approach) */
+@media (max-width: 768px) {
+  .App-header {
+    padding: 20px;
+  }
+
+  .App-logo {
+    height: 20vmin; /* Make the logo smaller */
+  }
+
+  .App-link {
+    font-size: 1.5rem; /* Adjust font size */
+  }
+
+  /* Make content more compact */
+  .App .container {
+    padding: 20px;
+    width: 100%;
+  }
+
+  /* Make components responsive */
+  .hero-section, .courses-section, .about-section, .contact-section {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .registration-form {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* Adjust padding and margins */
+  .section {
+    padding: 20px 10px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Media Query for smaller mobile screens */
+@media (max-width: 480px) {
+  .App-header {
+    padding: 10px;
+  }
+
+  .App-logo {
+    height: 15vmin; /* Make the logo even smaller */
+  }
+
+  .App-link {
+    font-size: 1.2rem; /* Adjust font size */
+  }
+
+  /* Adjust fonts and spacing for better readability */
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .about-section, .contact-section {
+    font-size: 0.9rem;
+  }
+
+  /* Stack the layout for smaller screens */
+  .App .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .courses .course-item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .registration-form {
+    width: 100%;
+    margin-top: 10px;
   }
 }
