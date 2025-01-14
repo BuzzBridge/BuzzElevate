@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/Modal.css";
+import "/Users/asees/Documents/Elevate/my-app/src/styles/Modal.css";
 
 const DigitalMarketingModal = ({ showModal, course, onClose }) => {
   if (!showModal) return null;

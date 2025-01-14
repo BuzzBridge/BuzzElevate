@@ -11,7 +11,6 @@ import "../styles/Modal.css"; // Import modal-specific styles (if separate)
 const Courses = () => {
   const [showModal, setShowModal] = useState(false); // State to manage modal visibility
   const [selectedCourse, setSelectedCourse] = useState(null); // Store selected course data
-  const courseSectionBackground = require(`../assets/images/courseSectionBackground.jpg`);
 
   const openModal = (course) => {
     setSelectedCourse(course); // Set the selected course
@@ -46,14 +45,7 @@ const Courses = () => {
   };
 
   return (
-    <section
-      className="courses"
-      id="courses" 
-      style={{
-        backgroundImage: `url(${courseSectionBackground})`,
-      }}
-
-    >
+    <section className="courses" id="courses">
       <h2>Our Courses</h2>
       <div className="course-grid">
         {courses.map((course) => (
