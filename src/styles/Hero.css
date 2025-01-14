@@ -1,13 +1,14 @@
+/* Base Styles */
 .hero {
   position: relative;
   height: 100vh;
   display: flex;
-  flex-direction: column; /* Stack the content and button vertically */
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start; /* Align items to the left */
-  text-align: left; /* Align text to the left */
+  align-items: center; /* Center align content horizontally */
+  text-align: center; /* Center-align text */
   overflow: hidden;
-  padding-left: 20px; /* Adds some left padding to the entire section */
+  padding: 20px; /* General padding for all devices */
 }
 
 .hero-video {
@@ -20,43 +21,32 @@
   z-index: -1;
 }
 
-.hero-content h1,
-.hero-content p {
-  font-size: 4rem;
-  margin: 0; /* Remove all default margin */
-  font-weight: bold;
-  letter-spacing: 2px;
-  display: inline-block; /* Ensures that both elements align horizontally */
+.hero-content {
+  position: relative;
+  color: white;
+  z-index: 1;
+  width: 100%; /* Full width for flexible design */
+  max-width: 600px; /* Restrict maximum width for large screens */
+  padding: 20px;
 }
-
-.hero-content p {
-  font-weight: lighter;
-  line-height: 1.6;
-  margin-left: 0;
-  margin-top: 0; /* Remove any top margin */
-}
-
 
 .hero-content img {
-  max-width: 200%; /* Increase size beyond the container width */
+  max-width: 100%; /* Ensure image scales within its container */
   height: auto; /* Maintain aspect ratio */
   display: block; /* Ensure proper alignment */
-  margin: 0 auto; /* Center the image */
+  margin: 0 auto; /* Center-align image */
 }
-
 
 .cta-button {
   padding: 10px 20px;
   background-color: black;
   color: white;
   border: 2px solid white;
-  border-radius: 25px; /* Creates the curved edges */
+  border-radius: 25px;
   font-size: 1rem;
   cursor: pointer;
-  transition: all 0.3s ease; /* Adds a smooth hover effect */
-  margin-top: 30px; /* Adds space between the content and the button */
-  margin-left: 80px;
-  width: 200px; /* Set a specific width for the button */
+  transition: all 0.3s ease;
+  margin-top: 20px;
 }
 
 .cta-button:hover {
@@ -65,33 +55,47 @@
   border: 2px solid black;
 }
 
-.hero-content {
-  position: relative;
-  color: white;
-  z-index: 1;
-  width: 100%;
-  max-width: 400px; /* Restricts the width of the content */
-  padding: 20px;
-  border-radius: 10px;
-  margin-left: 50px; /* Optional: subtle shadow for text contrast */
-}
-
 /* Responsive Design */
-@media (max-width: 768px) {
+
+/* Tablet View */
+@media (max-width: 1024px) {
   .hero {
-    padding-left: 20px; /* Reduce padding for smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+    height: auto; /* Allow content to adjust naturally */
   }
 
   .hero-content {
-    max-width: 100%; /* Allow content to stretch on smaller screens */
-    margin-left: 0; /* Center-align content */
+    max-width: 90%; /* Adjust content width for tablets */
+    text-align: center; /* Center-align content */
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .hero {
+    padding: 10px; /* Reduce padding */
+  }
+
+  .hero-content {
+    max-width: 100%; /* Allow content to stretch fully */
+    text-align: center; /* Center content for smaller screens */
   }
 
   .cta-button {
-    width: auto; /* Allow button to adjust its width */
+    width: auto; /* Allow button to adjust dynamically */
+    font-size: 0.9rem; /* Reduce font size */
+    padding: 8px 12px; /* Adjust padding */
+  }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+  .hero-content img {
+    max-width: 90%; /* Scale image slightly smaller */
   }
 
-  .registration-form {
-    max-width: 100%; /* Adjust form width for mobile devices */
+  .cta-button {
+    font-size: 0.8rem; /* Further reduce font size */
+    padding: 6px 10px; /* Reduce padding */
   }
 }
