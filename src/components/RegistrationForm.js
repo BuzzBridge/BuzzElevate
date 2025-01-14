@@ -9,6 +9,7 @@ const RegistrationForm = () => {
     phone: "",
     course: "",
   });
+  const registrationFormBackground = require(`../assets/images/courseSectionBackground.jpg`);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -37,7 +38,12 @@ const RegistrationForm = () => {
   };
 
   return (
-    <div className="registration-form-wrapper">
+    <div
+      className="registration-form-wrapper"
+      style={{
+        backgroundImage: `url(${registrationFormBackground})`,
+      }}
+    >
       <div className="registration-heading">
         <h2>Begin Your Elevation</h2>
       </div>
