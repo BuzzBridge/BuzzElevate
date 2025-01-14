@@ -2,6 +2,9 @@ import React from "react";
 import "../styles/Hero.css";
 
 const Hero = ({ registrationRef }) => {
+  const loopVideo = require(`../assets/videos/elevateMainLoop.mp4`)
+  const tagLine = require(`../assets/images/elevateTagline.png`)
+  
   // Function to handle scroll
   const scrollToRegistration = () => {
     // Scroll to the registration form smoothly
@@ -11,13 +14,13 @@ const Hero = ({ registrationRef }) => {
   return (
     <section className="hero">
       <video className="hero-video" autoPlay loop muted>
-        <source src="/assets/videos/elevateHeroFinal.mp4" type="video/mp4" />
+        <source src={loopVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className="hero-content">
         {/* Replace text with an image */}
         <img 
-          src="/assets/images/ElevateHero.png" 
+          src={tagLine}
           alt="Elevate your creative career with us" 
           className="hero-image" 
         />
