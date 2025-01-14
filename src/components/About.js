@@ -2,9 +2,16 @@ import React from "react";
 import "../styles/About.css";
 
 const About = () => {
+  const aboutImage = require(`../assets/images/aboutUsBackground.jpg`)
   // TODO: Move context to json
   return (
-    <section className="about" id="about">
+    <section
+      className="about"
+      id="about"
+      style={{
+        backgroundImage: `url(${aboutImage})`
+      }}
+    >
       <h2>About Us</h2>
       <p>
         Welcome to Elevate Academy, Jammu’s first-of-its-kind creative learning hub dedicated to nurturing talent and transforming dreams into reality. 
