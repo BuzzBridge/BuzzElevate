@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/BuzzElevate/static/css/main.363e6b83.css",
-    "main.js": "/BuzzElevate/static/js/main.b1608d57.js",
-    "static/media/fontawesome-webfont.svg?v=4.7.0": "/BuzzElevate/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
-    "static/media/fontawesome-webfont.eot": "/BuzzElevate/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
-    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/BuzzElevate/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
-    "static/media/fontawesome-webfont.woff?v=4.7.0": "/BuzzElevate/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
-    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/BuzzElevate/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
-    "static/media/CoursesImage.jpg": "/BuzzElevate/static/media/CoursesImage.73126bf6f381619d35bd.jpg",
-    "static/media/AboutUsImage.jpg": "/BuzzElevate/static/media/AboutUsImage.10cba0331e1a1ab2cd75.jpg",
-    "index.html": "/BuzzElevate/index.html",
-    "main.363e6b83.css.map": "/BuzzElevate/static/css/main.363e6b83.css.map",
-    "main.b1608d57.js.map": "/BuzzElevate/static/js/main.b1608d57.js.map"
+    "main.css": "/static/css/main.cc0bdd0d.css",
+    "main.js": "/static/js/main.2b7bfc21.js",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/courseSectionBackground.jpg": "/static/media/courseSectionBackground.73126bf6f381619d35bd.jpg",
+    "static/media/aboutSectionBackground.jpg": "/static/media/aboutSectionBackground.10cba0331e1a1ab2cd75.jpg",
+    "index.html": "/index.html",
+    "main.cc0bdd0d.css.map": "/static/css/main.cc0bdd0d.css.map",
+    "main.2b7bfc21.js.map": "/static/js/main.2b7bfc21.js.map"
   },
   "entrypoints": [
-    "static/css/main.363e6b83.css",
-    "static/js/main.b1608d57.js"
+    "static/css/main.cc0bdd0d.css",
+    "static/js/main.2b7bfc21.js"
   ]
 }
