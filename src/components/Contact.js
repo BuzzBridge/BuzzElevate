@@ -4,12 +4,12 @@ import "../styles/Contact.css";
 const Contact = () => {
   const contactUsBackground = require(`../assets/images/backgroundImage1.jpg`);
   return (
-    <section
+    <div
       className="contact-section"
       id="contact-section"
-      // style={{
-      //   backgroundImage: `url(${contactUsBackground})`
-      // }}
+      style={{
+        backgroundImage: `url(${contactUsBackground})`
+      }}
     >
       <div className="title-wrapper">
       <h2 className="contact-title">Let’s Connect</h2>
@@ -27,7 +27,7 @@ const Contact = () => {
           </p>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
