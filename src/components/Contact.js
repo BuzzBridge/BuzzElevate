@@ -7,11 +7,13 @@ const Contact = () => {
     <section
       className="contact-section"
       id="contact-section"
-      style={{
-        backgroundImage: `url(${contactUsBackground})`
-      }}
+      // style={{
+      //   backgroundImage: `url(${contactUsBackground})`
+      // }}
     >
+      <div className="title-wrapper">
       <h2 className="contact-title">Let’s Connect</h2>
+      </div>
       <div className="contact-wrapper">
         <div className="contact-info">
           <p>

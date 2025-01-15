@@ -38,7 +38,7 @@ const RegistrationForm = () => {
   };
 
   return (
-    <section 
+    <div 
       className="registration-form-wrapper"
       style={{
         backgroundImage: `url(${backgroundImage})`
@@ -94,10 +94,10 @@ const RegistrationForm = () => {
       {popupVisible && (
         <div className="popup">
           <p>Response Submitted</p>
-          <p>We'll be in contact with you soon!</p>
+          <p>We'll be in contact you soon!</p>
         </div>
       )}
-    </section>
+    </div>
   );
 };
 

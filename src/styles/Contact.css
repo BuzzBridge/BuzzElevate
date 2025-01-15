@@ -1,25 +1,31 @@
 .contact-section {
-  padding: 40px 20px;
   background-color: black;
   color: white;
   width: 100%;
+  max-width: 100%; 
+  overflow: hidden;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: 20px;
+
 }
 
 .contact-title {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  margin: 0 auto 1rem;
   border-radius: 25px;
-  background-color: white; /* Semi-transparent black background for better contrast */
+  background-color: white;
   color: black;
-  width: 300px;
-  margin: 0 auto 50px;
-  padding: 10px;
+  padding: 10px 20px; 
+  width: fit-content; 
   text-align: center; 
 }
 
+
 .contact-info {
   flex: 1;
-  min-width: 300px;
+  min-width: 100%;
   font-size: 1rem;
   text-align: center;
 }
