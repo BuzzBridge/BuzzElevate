@@ -14,15 +14,15 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Header /> */}
+       <Header />
       {/* <Hero registrationRef={registrationRef} /> */}
-      {/* <Courses /> */}
-      {/* <About /> */}
+      {/* <Courses />  */}
+      <About />
       <div ref={registrationRef}> 
          <RegistrationForm /> 
-       </div>
-      <Contact/>
-      {/* <Footer /> */}
+       </div> 
+       <Contact/>
+      <Footer />
     </div>
   );
 }

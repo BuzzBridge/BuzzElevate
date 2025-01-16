@@ -5,6 +5,7 @@
   color: white; /* Makes the text stand out on a background image */
   text-align: center; 
   width: 100%;
+  box-sizing: border-box;
 }
 
 .about h2 {
