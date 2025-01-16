@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
        <Header />
-      {/* <Hero registrationRef={registrationRef} /> */}
+      <Hero registrationRef={registrationRef} />
       {/* <Courses />  */}
       <About />
       <div ref={registrationRef}> 

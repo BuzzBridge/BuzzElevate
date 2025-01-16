@@ -10,6 +10,7 @@
   text-align: center; /* Center-align text */
   overflow: hidden;
   padding: 20px; /* General padding for all devices */
+  box-sizing: border-box;
 }
 
 .hero-video {
@@ -32,11 +33,13 @@
 }
 
 .hero-content img {
-  max-width: 100%; /* Ensure image scales within its container */
+  max-width: 100%; /* Ensure the image scales properly */
   height: auto; /* Maintain aspect ratio */
   display: block; /* Ensure proper alignment */
-  margin: 0 auto; /* Center-align image */
+  margin: 0 auto; /* Center the image horizontally */
+  box-sizing: border-box;
 }
+
 
 .cta-button {
   padding: 10px 20px;
@@ -48,7 +51,10 @@
   cursor: pointer;
   transition: all 0.3s ease;
   margin-top: 20px;
+  text-align: center; /* Center-align text */
+  display: inline-block; /* Proper block alignment */
 }
+
 
 .cta-button:hover {
   background-color: white;
