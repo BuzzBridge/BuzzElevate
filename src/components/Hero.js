@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/Hero.css";
 
 const Hero = ({ registrationRef }) => {
-  const loopVideo = require(`../assets/videos/elevateMainLoop.mp4`)
+  const loopVideo = require(`../assets/videos/elevateMainLoop2.mp4`)
   const tagLine = require(`../assets/images/elevateTagline.png`)
   
   // Function to handle scroll

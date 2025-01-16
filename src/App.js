@@ -14,10 +14,10 @@ function App() {
 
   return (
     <div className="App">
-       <Header />
+      <Header /> 
       <Hero registrationRef={registrationRef} />
       {/* <Courses />  */}
-      <About />
+      <About /> 
       <div ref={registrationRef}> 
          <RegistrationForm /> 
        </div> 
