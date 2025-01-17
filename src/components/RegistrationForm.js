@@ -19,11 +19,29 @@ const RegistrationForm = () => {
     }));
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault(); // Prevent the default form submission
+  const handleSubmit = async (event) => {
+    event.preventDefault(); 
     setPopupVisible(true);
 
-    // Reset form data after submission
+  
+    const scriptURL = "https://script.google.com/macros/s/AKfycbyCV2slGuP6m-9sbudz4iTrZq66BEf80WABV7O9QS6Z1uPeY0ICJw_8BMMrXlm38eU4bg/exec";
+
+    try {
+      const response = await fetch(scriptURL, {
+        method: "POST",
+        body: JSON.stringify(formData),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      const result = await response.json();
+      console.log("Success:", result);
+    } catch (error) {
+      console.error("Error:", error);
+    }
+
+  
     setFormData({
       fullName: "",
       email: "",
@@ -31,17 +49,16 @@ const RegistrationForm = () => {
       course: "",
     });
 
-    // Optionally, hide the popup after a few seconds
     setTimeout(() => {
       setPopupVisible(false);
-    }, 3000); // Popup will disappear after 3 seconds
+    }, 3000); 
   };
 
   return (
-    <div 
+    <div
       className="registration-form-wrapper"
       style={{
-        backgroundImage: `url(${backgroundImage})`
+        backgroundImage: `url(${backgroundImage})`,
       }}
     >
       <div className="registration-heading">
@@ -94,7 +111,7 @@ const RegistrationForm = () => {
       {popupVisible && (
         <div className="popup">
           <p>Response Submitted</p>
-          <p>We'll be in contact you soon!</p>
+          <p>We'll be in contact with you soon!</p>
         </div>
       )}
     </div>
