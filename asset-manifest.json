@@ -1,15 +1,18 @@
 {
   "files": {
     "main.css": "/BuzzElevate/static/css/main.9f274298.css",
-    "main.js": "/BuzzElevate/static/js/main.80803e9d.js",
+    "main.js": "/BuzzElevate/static/js/main.9461f58d.js",
     "static/media/elevateMainLoop2.mp4": "/BuzzElevate/static/media/elevateMainLoop2.0078a0102a9786aa3871.mp4",
     "static/media/videoEditingDescription.png": "/BuzzElevate/static/media/videoEditingDescription.f395eac2c18921e58e79.png",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/BuzzElevate/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/musicProductionDescription.png": "/BuzzElevate/static/media/musicProductionDescription.138211fb1bd07e0d50ed.png",
     "static/media/graphicDesignDescription.png": "/BuzzElevate/static/media/graphicDesignDescription.36c65deef6637b93628e.png",
+    "static/media/musicProductionIntro.png": "/BuzzElevate/static/media/musicProductionIntro.5ed524c87f7a128cb9d7.png",
+    "static/media/musicProductionIntro1.png": "/BuzzElevate/static/media/musicProductionIntro1.9aca8e4dfb48d8cc65bc.png",
+    "static/media/graphicDesignIntro1.png": "/BuzzElevate/static/media/graphicDesignIntro1.1a400ca290cbd1f14afd.png",
+    "static/media/filmMakingIntro1.png": "/BuzzElevate/static/media/filmMakingIntro1.58b54608c70393290680.png",
     "static/media/fontawesome-webfont.eot": "/BuzzElevate/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/BuzzElevate/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
-    "static/media/musicProductionIntro.png": "/BuzzElevate/static/media/musicProductionIntro.67f7f9ce264bae290656.png",
     "static/media/filmMakingIntro.png": "/BuzzElevate/static/media/filmMakingIntro.d8478ea6dac6ead510c6.png",
     "static/media/graphicDesignIntro.png": "/BuzzElevate/static/media/graphicDesignIntro.0101574a6693a20660f4.png",
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/BuzzElevate/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
@@ -20,10 +23,10 @@
     "static/media/elevateLogo.png": "/BuzzElevate/static/media/elevateLogo.26d8393d9b3c51f27584.png",
     "index.html": "/BuzzElevate/index.html",
     "main.9f274298.css.map": "/BuzzElevate/static/css/main.9f274298.css.map",
-    "main.80803e9d.js.map": "/BuzzElevate/static/js/main.80803e9d.js.map"
+    "main.9461f58d.js.map": "/BuzzElevate/static/js/main.9461f58d.js.map"
   },
   "entrypoints": [
     "static/css/main.9f274298.css",
-    "static/js/main.80803e9d.js"
+    "static/js/main.9461f58d.js"
   ]
 }
