@@ -19,40 +19,79 @@ const RegistrationForm = () => {
     }));
   };
 
+  // const handleSubmit = async (event) => {
+  //   event.preventDefault(); 
+  //   setPopupVisible(true);
+
+  
+  //   const scriptURL = "https://script.google.com/macros/s/AKfycbzHngIvtBVSBTuy2S60HmOBSsNvo0O0b4pduEoVKCyMZ2_25NMo57wA7tJIkx5tqQqGMA/exec";
+
+  //   try {
+  //     const response = await fetch(scriptURL, {
+  //       method: "POST",
+  //       body: JSON.stringify(formData),
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //     });
+
+  //     const result = await response.json();
+  //     console.log("Success:", result);
+  //   } catch (error) {
+  //     console.error("Error:", error);
+  //   }
+
+  
+  //   setFormData({
+  //     fullName: "",
+  //     email: "",
+  //     phone: "",
+  //     course: "",
+  //   });
+
+  //   setTimeout(() => {
+  //     setPopupVisible(false);
+  //   }, 3000); 
+  // };
+
+
   const handleSubmit = async (event) => {
-    event.preventDefault(); 
-    setPopupVisible(true);
+  event.preventDefault();
+  setPopupVisible(true);
 
-  
-    const scriptURL = "https://script.google.com/macros/s/AKfycbyCV2slGuP6m-9sbudz4iTrZq66BEf80WABV7O9QS6Z1uPeY0ICJw_8BMMrXlm38eU4bg/exec";
+  const scriptURL = "https://script.google.com/macros/s/AKfycbyY81uhFX1siLHo75uU06miwuOl6TNTgiVvskXx890mqNUXcxgbum9w-6agC65KWh8Hhw/exec";
 
-    try {
-      const response = await fetch(scriptURL, {
-        method: "POST",
-        body: JSON.stringify(formData),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
-
-      const result = await response.json();
-      console.log("Success:", result);
-    } catch (error) {
-      console.error("Error:", error);
-    }
-
-  
-    setFormData({
-      fullName: "",
-      email: "",
-      phone: "",
-      course: "",
+  try {
+    const response = await fetch(scriptURL, {
+      method: "POST",
+      body: JSON.stringify(formData),
+      headers: {
+        "Content-Type": "application/json",
+      },
     });
 
-    setTimeout(() => {
-      setPopupVisible(false);
-    }, 3000); 
-  };
+    if (response.ok) {
+      const result = await response.json();
+      console.log("Success:", result);
+    } else {
+      console.error("Error in response:", response.statusText);
+    }
+  } catch (error) {
+    console.error("Error:", error);
+  }
+
+  setFormData({
+    fullName: "",
+    email: "",
+    phone: "",
+    course: "",
+  });
+
+  setTimeout(() => {
+    setPopupVisible(false);
+  }, 3000);
+};
+
 
   return (
     <div
