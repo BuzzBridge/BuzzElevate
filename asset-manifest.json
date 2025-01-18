@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/BuzzElevate/static/css/main.f50aff86.css",
-    "main.js": "/BuzzElevate/static/js/main.bd42905f.js",
+    "main.css": "/BuzzElevate/static/css/main.9f274298.css",
+    "main.js": "/BuzzElevate/static/js/main.80803e9d.js",
     "static/media/elevateMainLoop2.mp4": "/BuzzElevate/static/media/elevateMainLoop2.0078a0102a9786aa3871.mp4",
     "static/media/videoEditingDescription.png": "/BuzzElevate/static/media/videoEditingDescription.f395eac2c18921e58e79.png",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/BuzzElevate/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
@@ -19,11 +19,11 @@
     "static/media/elevateTagline.png": "/BuzzElevate/static/media/elevateTagline.045dbbfc9a938f401590.png",
     "static/media/elevateLogo.png": "/BuzzElevate/static/media/elevateLogo.26d8393d9b3c51f27584.png",
     "index.html": "/BuzzElevate/index.html",
-    "main.f50aff86.css.map": "/BuzzElevate/static/css/main.f50aff86.css.map",
-    "main.bd42905f.js.map": "/BuzzElevate/static/js/main.bd42905f.js.map"
+    "main.9f274298.css.map": "/BuzzElevate/static/css/main.9f274298.css.map",
+    "main.80803e9d.js.map": "/BuzzElevate/static/js/main.80803e9d.js.map"
   },
   "entrypoints": [
-    "static/css/main.f50aff86.css",
-    "static/js/main.bd42905f.js"
+    "static/css/main.9f274298.css",
+    "static/js/main.80803e9d.js"
   ]
 }
