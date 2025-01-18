@@ -16,11 +16,11 @@ function App() {
     <div className="App">
       <Header /> 
       <Hero registrationRef={registrationRef} />
-      {/* <Courses />  */}
+      <Courses /> 
       <About /> 
-      <div ref={registrationRef}> 
+      {/* <div ref={registrationRef}> 
          <RegistrationForm /> 
-       </div> 
+       </div>  */}
        <Contact/>
       <Footer />
     </div>

@@ -1,54 +1,143 @@
 .courses {
   padding: 50px 20px;
-  background-size: cover; /* Ensures the image covers the entire section */
-  background-position: center; /* Centers the image */
-  color: white; /* Makes the text stand out on a background image */
+  background-size: cover;
+  /* Ensures the image covers the entire section */
+  background-position: center;
+  /* Centers the image */
   text-align: center;
-  height: 800px;
-  width: 100%;
+  height: 90vh;
 }
 
 .courses h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   border-radius: 25px;
-  background-color: white; /* Semi-transparent black background for better contrast */
+  background-color: white;
+  /* Semi-transparent black background for better contrast */
   color: black;
-  width: 300px;
-  margin: 0 auto 50px;
-  padding: 10px;
+  width: fit-content;
+  margin: 0 auto 10px;
+  padding: 10px 30px;
 }
 
-.course-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-}
-
-.course-card {
-  position: relative;
+/* Wrapper to center the catalogue */
+.catalogue-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
-  height: 600px;
-  background-size: contain; /* Ensure the image fits within the card */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Avoid repeating the image */
-  border: 1px solid white;
-  border-radius: 8px;
-  color: white;
-  overflow: hidden; /* Ensure any overflow is clipped */
 }
 
-.explore-button {
+/* Container for course items */
+.catalogue-container {
+  display: flex;
+  gap: 30px;
+  overflow: hidden;
+  /* Prevent items from going outside the view */
+  width: 90%;
+  justify-content: space-between;
+  flex: 0 0 85%;
+  padding: 10px 10px 0 10px;
+}
+
+/* Course card styling */
+.course-card {
+  width: fit-content;
+  height: 60vh;
+  text-align: center;
+  background-color: #000000;
+  border-radius: 8px;
+  padding: 15px;
   margin-top: 10px;
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 15px rgba(28, 118, 182, 1);
+}
+
+/* Course image styling */
+.course-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+/* Explore button styling */
+.explore-button {
   padding: 10px 20px;
-  color: white;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1rem;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .explore-button:hover {
-  opacity: 0.8;
+  background-color: #0056b3;
+}
+
+.carousel-button {
+  width: 60px;
+  /* Circle width */
+  height: 60px;
+  /* Circle height */
+  background-color: #53d4ad;
+  /* Bright blue background */
+  border: none;
+  /* Remove border for cleaner look */
+  border-radius: 50%;
+  /* Makes it circular */
+  display: flex;
+  /* Enables flexbox */
+  align-items: center;
+  /* Centers content vertically */
+  justify-content: center;
+  /* Centers content horizontally */
+  cursor: pointer;
+  /* Changes cursor to pointer on hover */
+  transition: all 0.3s ease;
+  /* Smooth transition for hover effects */
+  box-shadow: 0px 4px 10px rgba(0, 191, 255, 0.5);
+  /* Subtle glow effect */
+}
+
+.carousel-button .arrow {
+  color: #fff;
+  /* Arrow color */
+  font-size: 36px;
+  /* Arrow size */
+  font-weight: bold;
+  /* Makes the arrow more pronounced */
+  padding-bottom: 10px;
+}
+
+.carousel-button:hover {
+  box-shadow: 0px 4px 15px rgba(0, 122, 255, 0.6);
+  /* Blue glow effect */
+  transform: scale(1.1);
+  /* Slightly enlarges the button on hover */
+}
+
+.carousel-button:active {
+  transform: scale(0.95);
+  /* Shrinks slightly on click for feedback */
+}
+
+@media (max-width: 768px) {
+  .carousel-button {
+    display: none;
+  }
+
+  .catalogue-container {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    flex: 0 0 100%;
+    padding: 10px 10px 0 10px;
+  }
 }

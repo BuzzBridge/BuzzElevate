@@ -20,7 +20,8 @@
   overflow: hidden;
 }
 
-.course-image {
+/* Change course-image */
+.course-image1 {
   width: 100%;
   height: auto;
   border-radius: 8px;
