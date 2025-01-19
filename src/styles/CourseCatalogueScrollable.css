@@ -1,0 +1,58 @@
+/* Outer container with horizontal scrolling */
+.course-scroll-container-new {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 16px;
+  scroll-behavior: smooth;
+  /* Smooth scrolling effect */
+  justify-content: center;
+}
+
+/* Horizontal row for courses */
+.course-row-new {
+  display: flex;
+  gap: 16px;
+}
+
+/* Individual course card */
+.course-card-new {
+  flex: 0 0 auto;
+  /* Prevent shrinking */
+  width: 300px;
+  /* Fixed width for consistent size */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: black;
+}
+
+.course-image-new {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.course-name-new {
+  margin: 8px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.explore-button-new {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.explore-button-new:hover {
+  background-color: #ffffff;
+  color: black;
+}

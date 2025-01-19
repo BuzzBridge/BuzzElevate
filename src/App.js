@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Courses from "./components/Courses";
+import CourseCatalogueScrollable from "./components/CourseCatalogueScrollable";
 import 'font-awesome/css/font-awesome.min.css';
 import Footer from "./components/Footer";
 import RegistrationForm from "./components/RegistrationForm";
@@ -16,7 +17,7 @@ function App() {
     <div className="App">
       <Header /> 
       <Hero registrationRef={registrationRef} />
-      <Courses /> 
+      <CourseCatalogueScrollable /> 
       <About /> 
        <Contact/>
         <div ref={registrationRef}> 
