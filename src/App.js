@@ -19,7 +19,7 @@ function App() {
       <Courses /> 
       <About /> 
        <Contact/>
-       <div ref={registrationRef}> 
+        <div ref={registrationRef}> 
          <RegistrationForm /> 
        </div> 
       <Footer />
