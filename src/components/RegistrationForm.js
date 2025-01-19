@@ -1,158 +1,21 @@
-import React, { useState } from "react";
-import "../styles/RegistrationForm.css";
+import React from "react";
+import "../styles/RegistrationForm.css"; 
 
 const RegistrationForm = () => {
-  const backgroundImage = require(`../assets/images/backgroundImage2.jpg`);
-  const [popupVisible, setPopupVisible] = useState(false);
-  const [formData, setFormData] = useState({
-    fullName: "",
-    email: "",
-    phone: "",
-    course: "",
-  });
+  const jotformUrl = "https://form.jotform.com/250181201079447"; 
 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
+  const handleRedirect = () => {
+    window.location.href = jotformUrl;
   };
 
-  // const handleSubmit = async (event) => {
-  //   event.preventDefault(); 
-  //   setPopupVisible(true);
-
-  
-  //   const scriptURL = "https://script.google.com/macros/s/AKfycbzHngIvtBVSBTuy2S60HmOBSsNvo0O0b4pduEoVKCyMZ2_25NMo57wA7tJIkx5tqQqGMA/exec";
-
-  //   try {
-  //     const response = await fetch(scriptURL, {
-  //       method: "POST",
-  //       body: JSON.stringify(formData),
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //     });
-
-  //     const result = await response.json();
-  //     console.log("Success:", result);
-  //   } catch (error) {
-  //     console.error("Error:", error);
-  //   }
-
-  
-  //   setFormData({
-  //     fullName: "",
-  //     email: "",
-  //     phone: "",
-  //     course: "",
-  //   });
-
-  //   setTimeout(() => {
-  //     setPopupVisible(false);
-  //   }, 3000); 
-  // };
-
-
-  const handleSubmit = async (event) => {
-  event.preventDefault();
-  setPopupVisible(true);
-
-  const scriptURL = "https://script.google.com/macros/s/AKfycbyY81uhFX1siLHo75uU06miwuOl6TNTgiVvskXx890mqNUXcxgbum9w-6agC65KWh8Hhw/exec";
-
-  try {
-    const response = await fetch(scriptURL, {
-      method: "POST",
-      body: JSON.stringify(formData),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-
-    if (response.ok) {
-      const result = await response.json();
-      console.log("Success:", result);
-    } else {
-      console.error("Error in response:", response.statusText);
-    }
-  } catch (error) {
-    console.error("Error:", error);
-  }
-
-  setFormData({
-    fullName: "",
-    email: "",
-    phone: "",
-    course: "",
-  });
-
-  setTimeout(() => {
-    setPopupVisible(false);
-  }, 3000);
-};
-
-
   return (
-    <div
-      className="registration-form-wrapper"
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-      }}
-    >
-      <div className="registration-heading">
-        <h2>Begin Your Elevation</h2>
-      </div>
-      <form className="registration-form" onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="fullName"
-          value={formData.fullName}
-          onChange={handleChange}
-          placeholder="Full Name"
-          required
-        />
-        <input
-          type="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          placeholder="Email Address"
-          required
-        />
-        <input
-          type="text"
-          name="phone"
-          value={formData.phone}
-          onChange={handleChange}
-          placeholder="Phone Number"
-          required
-        />
-        <select
-          className="course-dropdown"
-          name="course"
-          value={formData.course}
-          onChange={handleChange}
-          required
-        >
-          <option value="" disabled>
-            Select a Course
-          </option>
-          <option value="musicProduction">Music Production</option>
-          <option value="graphicDesign">Graphic Design</option>
-          <option value="digitalMarketing">Digital Marketing</option>
-        </select>
-        <button type="submit" className="submit-button">
-          Submit
-        </button>
-      </form>
-
-      {popupVisible && (
-        <div className="popup">
-          <p>Response Submitted</p>
-          <p>We'll be in contact with you soon!</p>
-        </div>
-      )}
+    <div className="registration-form-wrapper">
+      <button
+        className="registration-button"
+        onClick={handleRedirect}
+      >
+        Register Now
+      </button>
     </div>
   );
 };

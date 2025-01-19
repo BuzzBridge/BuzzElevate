@@ -81,29 +81,46 @@
   background-color: #0056b3;
 }
 
-.carousel-button {
+/* .carousel-button {
   width: 60px;
   /* Circle width */
   height: 60px;
   /* Circle height */
-  background-color: #53d4ad;
+  /* background-color: #53d4ad; */
   /* Bright blue background */
-  border: none;
+  /* border: none; */
   /* Remove border for cleaner look */
-  border-radius: 50%;
+  /* border-radius: 50%; */
   /* Makes it circular */
-  display: flex;
+  /* display: flex; */
   /* Enables flexbox */
-  align-items: center;
+  /* align-items: center; */
   /* Centers content vertically */
-  justify-content: center;
+  /* justify-content: center; */
   /* Centers content horizontally */
-  cursor: pointer;
+  /* cursor: pointer; */
   /* Changes cursor to pointer on hover */
-  transition: all 0.3s ease;
+  /* transition: all 0.3s ease; */
   /* Smooth transition for hover effects */
-  box-shadow: 0px 4px 10px rgba(0, 191, 255, 0.5);
+  /* box-shadow: 0px 4px 10px rgba(0, 191, 255, 0.5); */
   /* Subtle glow effect */
+/* } */
+
+
+.carousel-button {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 191, 255, 0.5);
+  font-size: 20px; /* Adjusted for the arrow size */
 }
 
 .carousel-button .arrow {
@@ -118,9 +135,11 @@
 
 .carousel-button:hover {
   box-shadow: 0px 4px 15px rgba(0, 122, 255, 0.6);
-  /* Blue glow effect */
   transform: scale(1.1);
-  /* Slightly enlarges the button on hover */
+}
+
+.carousel-button:active {
+  transform: scale(0.95);
 }
 
 .carousel-button:active {

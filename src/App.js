@@ -18,10 +18,10 @@ function App() {
       <Hero registrationRef={registrationRef} />
       <Courses /> 
       <About /> 
-      {/* <div ref={registrationRef}> 
-         <RegistrationForm /> 
-       </div>  */}
        <Contact/>
+       <div ref={registrationRef}> 
+         <RegistrationForm /> 
+       </div> 
       <Footer />
     </div>
   );

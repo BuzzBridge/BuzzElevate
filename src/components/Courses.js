@@ -90,9 +90,14 @@ const Courses = () => {
           </button>
         )} */}
 
-        <button className="carousel-button left" onClick={() => handleScroll("left")}>
+        {/* <button className="carousel-button left" onClick={() => handleScroll("left")}>
           <span class="arrow">&larr;</span>
-        </button>
+        </button> */}
+
+<button className="carousel-button left" onClick={() => handleScroll("left")}>
+  &lt;
+</button>
+
 
         <div
           // className={`catalogue-container ${courseContent.length > 3 ? "scrollable" : ""}`}
@@ -109,9 +114,15 @@ const Courses = () => {
             <span class="arrow">&rarr;</span>
           </button>
         )} */}
-        <button className="carousel-button right" onClick={() => handleScroll("right")}>
+        {/* <button className="carousel-button right" onClick={() => handleScroll("right")}>
           <span class="arrow">&rarr;</span>
-        </button>
+        </button> */}
+
+<button className="carousel-button right" onClick={() => handleScroll("right")}>
+  &gt;
+</button>
+
+
       </div>
       {/* <div className="course-grid">
         {courses.map((course) => (
